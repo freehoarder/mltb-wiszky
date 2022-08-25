@@ -4,12 +4,12 @@ from bot import CMD_INDEX
 class _BotCommands:
     def __init__(self):
         self.StartCommand = f'start{CMD_INDEX}'
-        self.MirrorCommand = (f'mirror{CMD_INDEX}', f'm{CMD_INDEX}')
-        self.UnzipMirrorCommand = (f'unzipmirror{CMD_INDEX}', f'uzm{CMD_INDEX}')
-        self.ZipMirrorCommand = (f'zipmirror{CMD_INDEX}', f'zm{CMD_INDEX}')
-        self.QbMirrorCommand = (f'qbmirror{CMD_INDEX}', f'qm{CMD_INDEX}')
-        self.QbUnzipMirrorCommand = (f'qbunzipmirror{CMD_INDEX}', f'quzm{CMD_INDEX}')
-        self.QbZipMirrorCommand = (f'qbzipmirror{CMD_INDEX}', f'qzm{CMD_INDEX}')
+        self.MirrorCommand = (f'mir{CMD_INDEX}', f'm{CMD_INDEX}')
+        self.UnzipMirrorCommand = (f'unzip{CMD_INDEX}', f'uzm{CMD_INDEX}')
+        self.ZipMirrorCommand = (f'zip{CMD_INDEX}', f'zm{CMD_INDEX}')
+        self.QbMirrorCommand = (f'qbm{CMD_INDEX}', f'qm{CMD_INDEX}')
+        self.QbUnzipMirrorCommand = (f'qbunzip{CMD_INDEX}', f'quzm{CMD_INDEX}')
+        self.QbZipMirrorCommand = (f'qbzip{CMD_INDEX}', f'qzm{CMD_INDEX}')
         self.YtdlCommand = (f'ytdl{CMD_INDEX}', f'y{CMD_INDEX}')
         self.YtdlZipCommand = (f'ytdlzip{CMD_INDEX}', f'yz{CMD_INDEX}')
         self.LeechCommand = (f'leech{CMD_INDEX}', f'l{CMD_INDEX}')
