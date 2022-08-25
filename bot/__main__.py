@@ -188,18 +188,6 @@ def main():
                     except Exception as e:
                         LOGGER.error(e)
 
-    if ospath.isfile(".restartmsg"):
-        with open(".restartmsg") as f:
-            chat_id, msg_id = map(int, f)
-        bot.edit_message_text("Restarted Successfully!", chat_id, msg_id)
-        osremove(".restartmsg")
-    elif not notifier_dict and AUTHORIZED_CHATS:
-        for id_ in AUTHORIZED_CHATS:
-            try:
-                bot.sendMessage(id_, "🥳", 'HTML')
-            except Exception as e:
-                LOGGER.error(e)
-
     start_handler = CommandHandler(BotCommands.StartCommand, start, run_async=True)
     ping_handler = CommandHandler(BotCommands.PingCommand, ping,
                                   filters=CustomFilters.authorized_chat | CustomFilters.authorized_user, run_async=True)
