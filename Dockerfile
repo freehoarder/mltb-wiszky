@@ -1,4 +1,4 @@
-FROM wiszky/mltb-wiszky:heroku
+FROM wiszky/mltb107:heroku
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
